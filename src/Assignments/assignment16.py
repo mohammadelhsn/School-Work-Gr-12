@@ -1,25 +1,8 @@
-import random
-
-inventory = {
-    "cash": random.randrange(0, 500, 10),
-    "items": ["candy", "car", "bike", "scooter"],
-}
-guild = {
-    "car": {"sell": 1000, "buy": 250},
-    "bike": {"sell": 400, "buy": 50},
-    "scooter": {"sell": 500, "buy": 65},
-    "candy": {"sell": 20, "buy": 5},
-}
+import random;inventory={"cash":random.randrange(0,500,10),"items":["candy","car","bike","scooter"],};guild={"car":{"sell":1000,"buy":250},"bike":{"sell":400,"buy":50},"scooter":{"sell":500,"buy":65},"candy":{"sell":20,"buy": 5},}
 while True:
-    inv_cash = inventory["cash"]
-    print(f"You have ${inv_cash}")
-    inv_items = inventory["items"]
-    print(f"You own {inv_items}")
-    action = input("What would you like to do? (Buy/Sell) ")
-    if action.lower() == "sell":
-        if len(inventory["items"]) == 0:
-            print("You don't have anything to sell!")
-            continue
+    inv_cash=inventory["cash"];print(f"You have ${inv_cash}");inv_items=inventory["items"];print(f"You own {inv_items}");action=input("What would you like to do? (Buy/Sell) ")
+    if(action.lower()=="sell"):
+        if len(inventory["items"]) == 0: print("You don't have anything to sell!");continue
         item = input("What would you like to sell? ")
         if item in inventory["items"]:
             guild_item = guild.get(item)

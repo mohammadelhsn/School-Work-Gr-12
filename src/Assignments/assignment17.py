@@ -66,14 +66,39 @@ words = [
 guesses = 3  # per question
 attempts = int(input("How many words would you like to attempt? "))
 toguess = []
+points = 0
+correct = 0
+incorrect = 0
 
 for i in range(attempts):
     choice = random.choice(words)
     toguess.append(choice)
     words.remove(choice)
 
-print(toguess)
-
 for word in toguess:
-    word_len = len(word["translation"])
+    word_len = len(word["english"])
+    translation = word["translation"]
     print(f"The length of the word is {word_len}")
+    print(f"The french word is {translation}")
+    print(f"You have {points} point(s)")
+
+    for i in range(3):
+        guess = input("What is your guess for the word? ")
+        english = word["english"]
+        if guesses > 0:
+            if guess.lower() == english:
+                points = points + word["points"]
+                print("✅ | You guessed correct! Niceeee! ")
+                correct += 1
+                break
+            else:
+                print("❌ | You guessed wrong!")
+                guesses -= 1
+                points = points - random.randint(50, 100)
+        else:
+            print("❌ | You ran out of guesses!")
+            print(f"The word was {english}")
+            incorrect += 1
+            break
+
+print(f"You finished this game with {points}")

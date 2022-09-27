@@ -38,11 +38,11 @@ while True:
                 "You cannot delete anything from an empty dictionary. Try inserting something first."
             )
             continue
-            print("You have chosen to delete from the dictionary")
-            toDelete = input("What would you like to delete? ")
-            del d[toDelete]
-            print(f"{toDelete} has been deleted from the dictionary")
-            print(d)
+        print("You have chosen to delete from the dictionary")
+        toDelete = input("What would you like to delete? ")
+        del d[toDelete]
+        print(f"{toDelete} has been deleted from the dictionary")
+        print(d)
     if selection == 3:
         print("You have chosen to clear the dictionary")
         d.clear()
