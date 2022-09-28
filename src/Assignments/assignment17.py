@@ -62,8 +62,7 @@ words = [
         "hints": [],
     },
 ]
-
-guesses = 3  # per question
+guesses = 3
 attempts = int(input("How many words would you like to attempt? "))
 toguess = []
 points = 0
