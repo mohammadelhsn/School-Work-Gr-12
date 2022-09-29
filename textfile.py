@@ -3,13 +3,9 @@ words = txt.readline().split(" ")
 word_counts = {}
 for word in words:
     if "." in word:
-        print(word)
         word = word.replace(".", "")
-        print(word)
     if "," in word:
-        print(word)
         word = word.replace(",", "")
-        print(word)
     if "-" in word:
         splitted = word.split("-")
         for w in splitted:
