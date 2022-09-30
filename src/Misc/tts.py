@@ -1,7 +1,5 @@
 import pyttsx3
 import requests
-
-
 def main():
     engine = pyttsx3.init()
     song_name = input(
@@ -31,6 +29,4 @@ def main():
     else:
         main()
         return
-
-
 main()
