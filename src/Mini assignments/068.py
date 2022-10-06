@@ -40,6 +40,8 @@ while True:
             continue
         print("You have chosen to delete from the dictionary")
         toDelete = input("What would you like to delete? ")
+        if d.get(toDelete) == None:
+            continue
         del d[toDelete]
         print(f"{toDelete} has been deleted from the dictionary")
         print(d)
