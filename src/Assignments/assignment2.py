@@ -1,45 +1,8 @@
-"""
-Create three different simple games that require a random number generator.  Pass through the values (depending on the game) to the ONE SINGLE FUNCTION that has a random number generator and get the result from that function.  Use a conditional statements to ask which game they would like to play.  Some ideas below or come up with your own.  Continue to loop the game until a sentinel value is achieved.
-
-IDEAS:
-
-Rock, Paper, Scissor
-
-Rolling Dice
-
-Number Guessing game
-
-Highest Card wins
-
-Simple Fight Game (reduce hit points by the number generated)
-
-etc
-
-For Example : Dice Game
-
-Conditional to ask which game they want to play
-
-Send the values associated with a DICE GAME into the a RANDOM function
-
-The Random Function uses the passed values to come up with the random number
-
-Return the random number and output it to the user
-
-The user will compare the number to see if they won or not
-
-Start over asking the user which game they want to play
-
-SIMPLE
-
-Since we have not learned how to store the values being returned from the function, the simple way to place is the user will have to determine for themselves whether they have won or lost."""
-
 import random
 import time
 
-
 def ran(start, end):
     return random.randint(start, end)
-
 
 def rps(choice):
     bot_choice = ran(1, 3)
@@ -94,7 +57,6 @@ def dice(guess):
     else:
         return False
 
-
 def ranNUm(guess):
     rando = ran(1, 50)
     print("Generating...")
@@ -104,7 +66,6 @@ def ranNUm(guess):
         return True
     else:
         return False
-
 
 while True:
     game = input("What game would you like to play? (Dice game, rps, guessing) ")

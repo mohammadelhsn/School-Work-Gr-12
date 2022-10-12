@@ -1,5 +1,14 @@
-import json
-
-with open("test.json", "r") as json_file:
-    data = json.load(json_file)
-    print(data["test"])
+print(f"😎 " * 6)
+l = "  " * 5
+print(f"😎 " + l + "  😎")
+print(f"😎 " + l + "  😎")
+print(f"😎 " + l + "  😎")
+print(f"😎 " + l + "  😎")
+print(f"😎 " + l + "  😎")
+print(f"😎 " + l + "  😎")
+print(f"😎 " + l + "  😎")
+print(f"😎 " + l + "  😎")
+print(f"😎 " + l + "  😎")
+print(f"😎 " + l + "  😎")
+print(f"😎 " + l + "  😎")
+print(f"😎 " * 6)
