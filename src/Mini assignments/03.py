@@ -4,11 +4,11 @@ def price(toppings):
 
 print("Welcome to Python Pizza!")
 
-pizzas = 1
+pizzas = 0
 
 while pizzas != 3:
     try:
-        toppings = int(input(f"How many toppings on pizza #{pizzas}? "))
+        toppings = int(input(f"How many toppings on pizza #{pizzas+1}? "))
         print(
             f"For a pizza with {toppings} topping(s), the total would be: ${price(toppings)}"
         )
@@ -16,5 +16,3 @@ while pizzas != 3:
     except Exception as e:
         print(e)
         continue
-    finally:
-        print("hi")

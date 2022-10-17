@@ -1,5 +1,6 @@
 import random
 
+
 def subtotal(number_of_people):
     if number_of_people < 8:
         costPer = random.randint(13, 15)
