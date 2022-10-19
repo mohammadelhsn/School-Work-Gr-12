@@ -1,4 +1,5 @@
-import colorama
+def f1(*args):
+    print(type(args))
 
-print(colorama.Fore.RED, "hi")
-print(colorama.Fore.CYAN, "hi")
+
+f1()
