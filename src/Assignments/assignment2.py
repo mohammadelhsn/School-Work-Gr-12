@@ -1,10 +1,10 @@
 import random
 import time
 
-def ran(start, end):
+def ran(start: int, end: int):
     return random.randint(start, end)
 
-def rps(choice):
+def rps(choice: str):
     bot_choice = ran(1, 3)
     choices = {1: "rock", 2: "paper", 3: "scissors"}
     user_choice = 0
@@ -47,7 +47,7 @@ def rps(choice):
             return "retry"
 
 
-def dice(guess):
+def dice(guess: int):
     roll = ran(1, 6)
     print("Rolling...")
     time.sleep(5)
@@ -57,7 +57,7 @@ def dice(guess):
     else:
         return False
 
-def ranNUm(guess):
+def ranNUm(guess: int):
     rando = ran(1, 50)
     print("Generating...")
     time.sleep(5)

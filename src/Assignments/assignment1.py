@@ -3,7 +3,7 @@ while True:
         num1 = int(input("What is your first number? "))
         num2 = int(input("What is your second number? "))
         operation = input("What is operation would you like to try? ")
-        add = lambda a, b: a + b
+        add = lambda a , b: a + b
         subtract = lambda a, b: a - b
         multiply = lambda a, b: a * b
         divide = lambda a, b: a / b

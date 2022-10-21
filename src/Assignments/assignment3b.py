@@ -1,7 +1,7 @@
 import math
 
 
-def pyth(a, b):
+def pyth(a: int, b: int):
     a = math.pow(a, 2)
     b = math.pow(b, 2)
     total = a + b

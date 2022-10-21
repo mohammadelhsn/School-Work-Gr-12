@@ -23,14 +23,14 @@ def generatePass():
     return password
 
 
-def countCheck(string):
+def countCheck(string: str):
     if len(string) < 8:
         return False
     else:
         return True
 
 
-def numCheck(string):
+def numCheck(string: str):
     nums = 0
     for char in string:
         if char.isdigit():
@@ -44,7 +44,7 @@ def numCheck(string):
         return True
 
 
-def lowerCheck(string):
+def lowerCheck(string: str):
     count = 0
     for char in string:
         if char.islower():
@@ -58,7 +58,7 @@ def lowerCheck(string):
         return True
 
 
-def upperCheck(string):
+def upperCheck(string: str):
     count = 0
     for char in string:
         if char.isupper():
