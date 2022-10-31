@@ -3,6 +3,7 @@ rand = 6
 
 
 def fight(armour, hit, hp):
+    print(f"You have been attacked and dealt for {hit} points")
 
     if armour < 3:
         print("you have blocked the blow")
