@@ -80,37 +80,35 @@ while True:
 
         print("Generating password!")
 
-        time.sleep(2)
-
         print(f"The password is {password}")
 
         countRes = countCheck(password)
 
         if countRes == True:
-            time.sleep(2)
+
             print("✅ | Passed!")
         if countRes == False:
-            time.sleep(2)
+
             print("❌ | The password entered doesn't meet the minimum character length")
             attempts = attempts + 1
             continue
 
         numberCheck = numCheck(password)
         if numberCheck == True:
-            time.sleep(2)
+
             print("✅ | Passed!")
         if numberCheck == False:
-            time.sleep(2)
+
             print("❌ | The password doesn't have the minimum required numbers")
             attempts = attempts + 1
             continue
 
         lowCheck = lowerCheck(password)
         if lowCheck == True:
-            time.sleep(2)
+
             print("✅ | Passed!")
         if lowCheck == False:
-            time.sleep(2)
+
             print("❌ | The password doesn't meet the minimum lower char requirements")
             attempts = attempts + 1
             continue
@@ -118,13 +116,13 @@ while True:
         upCheck = upperCheck(password)
 
         if upCheck == True:
-            time.sleep(2)
+
             print("✅ | Passed!")
             attempts += 1
             print(f"Game over! Took the program {attempts} attempt(s) to get it!")
             break
         if upCheck == False:
-            time.sleep(2)
+
             print(
                 "❌ | The password doesn't meet the minimum requirements for uppercase letters"
             )

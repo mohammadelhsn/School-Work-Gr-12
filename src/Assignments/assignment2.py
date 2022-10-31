@@ -20,7 +20,7 @@ def rps(choice: str):
             print("The bot also chose rock!")
             return "retry"
         if bot_choice == 2:
-            print("The bot chose rock")
+            print("The bot ch2ose rock")
             return "loss"
         if bot_choice == 3:
             print("The bot chose rock")
@@ -68,7 +68,7 @@ def ranNUm(guess: int):
         return False
 
 while True:
-    game = input("What game would you like to play? (Dice game, rps, guessing) ")
+    game = input("What game would you like to play? (Dice, rps, guessing) ")
 
     if game == "rps":
         choice = input("Rock, paper or scissors? ")
