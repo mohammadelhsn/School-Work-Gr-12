@@ -1,20 +1,9 @@
-hp = 5
-rand = 6
-
-
-def fight(armour, hit, hp):
-    print(f"You have been attacked and dealt for {hit} points")
-
-    if armour < 3:
-        print("you have blocked the blow")
-        hp = hp - (hit - 2)
+def factorial(num: int):
+    print(num)
+    if num <= 1:
+        return num
     else:
-        print("You have been hit")
-        hp = hp - hit
-    if hp <= 0:
-        print("you have died")
-    else:
-        print(f"You have {hp} hp left")
+        return num * factorial(num - 1)
 
 
-fight(2, rand, hp)
+print(factorial(5))
