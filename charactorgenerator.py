@@ -347,12 +347,12 @@ while True:
             f'Your character is a {highest["name"]} with a value of {highest["value"]}'
         )
 
-        restart = int(input("Are you happy with this character? (0 for no, 1 for yes)"))
-
-        if restart == 0:
-            pass
-        else:
-            file = open(f"{char.name}.txt", "w")
-            art = char.getascii()
-            file.write(art)
-            file.close()
+        restart = int(input("Are you happy with this character? (0 for no, 1 for yes)")) 
+ 
+        if restart == 0: 
+            pass 
+        else: 
+            file = open(f"{char.name}.txt", "w") 
+            art = char.getascii() 
+            file.write(art) 
+            file.close() 

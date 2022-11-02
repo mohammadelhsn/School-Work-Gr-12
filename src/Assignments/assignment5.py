@@ -58,8 +58,31 @@ import collections
 
 FILE_EXTENSIONS = ["pdf", "docx", "png", "gif", "jpg", "txt"]
 
+
+def printer_queue(queue):
+    # 14
+    document = f"___Document___"
+    # 12
+    status = f"___Status___"
+    # 11
+    owner = "___Owner___"
+    # 15
+    submitted = "___Submitted___"
+
+    print(f"{document}{status}{owner}{submitted}")
+
+    for file in queue:
+        name = f"{file['filename']}" + " " * (len(document) - len(file["filename"]) + 3)
+        stat = f"{file['status']}" + " " * (len(status) - len(file["status"]))
+        ow = f"{file['owner']}" + " " * (len(owner) - len(file["owner"]))
+        sub = f"{file['submitted']}" + " " * (len(submitted) - len(file["submitted"]))
+
+        print(f"{name}{stat}{ow}{sub}")
+
+
 while True:
     try:
+
         name = input("What is your full name?")
 
         num_of_files = int(input("How many files would you like to print? "))
@@ -74,9 +97,11 @@ while True:
                     "filename": f"{filename}.{extension}",
                     "status": "waiting",
                     "owner": name,
-                    "submitted": datetime.datetime.today(),
+                    "submitted": str(datetime.datetime.today()),
                 }
             )
+
+        printer_queue(queue)
 
     except Exception as e:
         print(e)

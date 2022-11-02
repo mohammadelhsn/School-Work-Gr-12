@@ -1,7 +1,11 @@
+from re import A
+
+
 attempts = 0
 
 
 def increaseAttempt():
+    global attempts
     attempts = attempts + 1
 
 
@@ -26,21 +30,26 @@ def isPalindrome(sum):
 
 while True:
     try:
+        attempts = 0
         num = int(input("User input: "))
-        results = addReverse(num)
 
-        print(f"Your number: {results['reverse']}")
-        print(f"Added number: {results['added']}")
+        while True:
+            results = addReverse(num)
 
-        res = isPalindrome(results["added"])
+            print(f"Your number: {results['reverse']}")
+            print(f"Added number: {results['added']}")
 
-        if res == True:
-            print(f"Palindrome: ✅")
-            increaseAttempt()
-            print(f"Attempts: {attempts}")
-        else:
-            print(f"Palindrome: ❌")
-            increaseAttempt()
-            print(f"Attempts: {attempts}")
+            res = isPalindrome(results["added"])
+
+            if res == True:
+                print(f"Palindrome: ✅")
+                increaseAttempt()
+                print(f"Attempts: {attempts}")
+                break
+            else:
+                print(f"Palindrome: ❌")
+                increaseAttempt()
+                print(f"Attempts: {attempts}")
+                num = results["added"]
     except Exception as e:
         print(e)
