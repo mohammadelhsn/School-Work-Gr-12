@@ -54,6 +54,7 @@ functions
 
 import random
 import datetime
+import time
 import collections
 
 FILE_EXTENSIONS = ["pdf", "docx", "png", "gif", "jpg", "txt"]
@@ -78,30 +79,86 @@ def printer_queue(queue):
         sub = f"{file['submitted']}" + " " * (len(submitted) - len(file["submitted"]))
 
         print(f"{name}{stat}{ow}{sub}")
+        time.sleep(0.5)
+
+
+def failure():
+    num = random.randint(1, 10)
+    fail = [1, 2, 3]
+
+    if num in fail:
+        return True
+    else:
+        return False
+
+
+def wait():
+    num = random.randint(1, 10)
+
+    if num >= 5:
+        return True
+    else:
+        return False
 
 
 while True:
-    try:
+    name = input("What is your full name?")
 
-        name = input("What is your full name?")
+    num_of_files = int(input("How many files would you like to print? "))
 
-        num_of_files = int(input("How many files would you like to print? "))
+    queue = collections.deque([])
 
-        queue = collections.deque([])
+    for i in range(num_of_files):
+        extension = random.choice(FILE_EXTENSIONS)
+        filename = input("What is the name of the file? ")
+        queue.append(
+            {
+                "filename": f"{filename}.{extension}",
+                "status": "waiting",
+                "owner": name,
+                "submitted": str(datetime.datetime.today()),
+            }
+        )
 
-        for i in range(num_of_files):
-            extension = random.choice(FILE_EXTENSIONS)
-            filename = input("What is the name of the file? ")
-            queue.append(
-                {
-                    "filename": f"{filename}.{extension}",
-                    "status": "waiting",
-                    "owner": name,
-                    "submitted": str(datetime.datetime.today()),
-                }
-            )
-
+    printer_queue(queue)
+    completed = []
+    print(f"🖨️ | Proceeding...")
+    index = -1
+    for i in range(len(queue)):
+        file = queue[index + 1]
+        file["status"] = "printing"
         printer_queue(queue)
+        print(f"Attempting to print {file['filename']}")
 
-    except Exception as e:
-        print(e)
+        fail = failure()
+
+        while fail == True:
+            print(f"❌ | The print failed!")
+            action = int(input("What would you like to do? 1) Wait 2) Remove"))
+
+            if action == 1:
+                fail_again = wait()
+
+                print(fail_again)
+
+                if fail_again == True:
+                    continue
+                else:
+                    fail = False
+                    break
+            else:
+                a = queue.popleft()
+                a["status"] = "removed"
+                completed.append(a)
+                print(f"✅ | Removed {file['filename']}")
+                break
+
+        if fail == False:
+            print(f"✅ | Printed {file['filename']}")
+            a = queue.popleft()
+            a["status"] = "printed"
+            completed.append(a)
+            continue
+
+    for a in completed:
+        print(f"✅ | {a['filename']}: {a['status']}")
