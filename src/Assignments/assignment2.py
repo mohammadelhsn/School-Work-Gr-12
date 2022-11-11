@@ -1,8 +1,15 @@
 import random
 import time
 
+# define a function to generate a random number
+
+
 def ran(start: int, end: int):
     return random.randint(start, end)
+
+
+# define a function for the rock paper scissors game
+
 
 def rps(choice: str):
     bot_choice = ran(1, 3)
@@ -47,27 +54,53 @@ def rps(choice: str):
             return "retry"
 
 
+# define a function for the dice game
+
+
 def dice(guess: int):
+    # generate a random dice roll
+
     roll = ran(1, 6)
     print("Rolling...")
     time.sleep(5)
+
+    # tell the user what the bot got
+
     print(f"The bot rolled {roll}")
+
+    # check if the users guess is the same as the rolled number
     if guess == roll:
         return True
     else:
         return False
 
+
+# define a function for the random number guessing game
+
+
 def ranNUm(guess: int):
+    # generate a random number
+
     rando = ran(1, 50)
+
     print("Generating...")
     time.sleep(5)
+
+    # tell the user, what the bot got
+
     print(f"The bot got {rando}")
+
+    # check if the provided answer is right
+
     if guess == rando:
         return True
     else:
         return False
 
+
 while True:
+    # ask the user what game they would like to play
+
     game = input("What game would you like to play? (Dice, rps, guessing) ")
 
     if game == "rps":
