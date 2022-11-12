@@ -1,14 +1,21 @@
+#############################################################################
+#Author: Mohammad El-Hassan
+#Description: Assignemnt #2
+#Date Created: 11/12/2022
+#Date Modified: 11/12/2022
+#############################################################################
+
 import random
 import time
 
-# define a function to generate a random number
+# Define a function to generate a random number
 
 
 def ran(start: int, end: int):
     return random.randint(start, end)
 
 
-# define a function for the rock paper scissors game
+# Define a function for the rock paper scissors game
 
 
 def rps(choice: str):

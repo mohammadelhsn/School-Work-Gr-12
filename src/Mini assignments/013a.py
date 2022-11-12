@@ -1,32 +1,37 @@
-"""
-Create a program that takes the values of a number and adds them together.  For example 101 would be 1 + 0 + 1 = 2.  Use recursion to complete along with functions
+#############################################################################
+#Author: Mohammad El-Hassan
+#Description: Mini Assingment #13a
+#Date Created: 11/12/2022
+#Date Modified: 11/12/2022
+#############################################################################
 
-HINT :  and you will need to use both Modulus and Floor to work out the answers. 
+def sum(arr: list, index=0, total=0):
+    # if the index is higher than the length of the array - 1 (so if the index is higher than the last item in the array)
 
-It is a math problem and a little tricky.
-
-If you can't figure it out, highlight the code below and try again.
-
-def sumnumber(number):
-
-    if number == 0:
-
-        return 0
-
-    else:
-
-        return (number%10) + sumnumber(number//10)
-
-number = int(input("what is the number"))
-
-print(sumnumber(number))
-"""
-
+    if (index > len(arr) - 1):
+        return total
+    else:         
+        total = total + arr[index]
+        index = index + 1
+        return sum(arr, index, total)
 
 while True:
     try:
+        # Get user input
+
         num = input("What is the number? ")
 
-        num = list(num)
+        # Since the input is a string, we're going to split the string and append it to a new list, and while we do that make everything a integer so we can use it in the functin
+
+        nums = []
+        i: str
+        for i in  num:
+            nums.append(int(i))
+
+        # Call the function, print the result to the console. 
+
+        print(f"The sum of the numbers is {sum(nums)}")
     except Exception as e:
+        # Print error to the console for debugging.  
+
         print(e)

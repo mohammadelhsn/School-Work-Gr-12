@@ -1,3 +1,10 @@
+#############################################################################
+#Author: Mohammad El-Hassan
+#Description: Mini Assingment #8a
+#Date Created: 11/12/2022
+#Date Modified: 11/12/2022
+#############################################################################
+
 import random
 import time
 

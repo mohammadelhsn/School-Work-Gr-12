@@ -1,3 +1,10 @@
+#############################################################################
+#Author: Mohammad El-Hassan
+#Description: Mini Assingment #63
+#Date Created: 11/12/2022
+#Date Modified: 11/12/2022
+#############################################################################
+
 nums = []
 num1 = int(input("Enter one number "))
 nums.append(num1 * num1)

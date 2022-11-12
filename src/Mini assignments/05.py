@@ -1,3 +1,10 @@
+#############################################################################
+#Author: Mohammad El-Hassan
+#Description: Mini Assingment #5
+#Date Created: 11/12/2022
+#Date Modified: 11/12/2022
+#############################################################################
+
 def getWord(lang):
     if lang == "en":
         return "Hello!"
