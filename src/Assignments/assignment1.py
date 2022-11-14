@@ -1,3 +1,10 @@
+#############################################################################
+#Author: Mohammad El-Hassan
+#Description: Assignemnt #1
+#Date Created: 11/12/2022
+#Date Modified: 11/12/2022
+#############################################################################
+
 while True:
     try:
         # get the input from the user (first number, second number and operation)
@@ -39,4 +46,7 @@ while True:
         else:
             raise Exception("Invalid Num / Invalid operation")
     except Exception as e:
+        # Print error the console for debugging and cotinue
+
         print(e)
+        continue

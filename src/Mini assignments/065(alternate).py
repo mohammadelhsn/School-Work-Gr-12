@@ -1,3 +1,10 @@
+#############################################################################
+#Author: Mohammad El-Hassan
+#Description: Mini Assingment #65 (alternate)
+#Date Created: 11/12/2022
+#Date Modified: 11/12/2022
+#############################################################################
+
 class_grade = {}
 student_grade = input("Enter your marks ")
 student_grade = student_grade.split(" ")

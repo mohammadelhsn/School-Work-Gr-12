@@ -1,3 +1,10 @@
+#############################################################################
+#Author: Mohammad El-Hassan
+#Description: Mini Assingment #12
+#Date Created: 11/12/2022
+#Date Modified: 11/12/2022
+#############################################################################
+
 import collections
 import time
 

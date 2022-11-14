@@ -1,3 +1,10 @@
+#############################################################################
+#Author: Mohammad El-Hassan
+#Description: Mini Assingment #65
+#Date Created: 11/12/2022
+#Date Modified: 11/12/2022
+#############################################################################
+
 marks = {}
 course1 = input("Course #1 ")
 mark1 = input("Mark #1")

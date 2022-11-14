@@ -1,3 +1,10 @@
+#############################################################################
+#Author: Mohammad El-Hassan
+#Description: Mini Assingment #8b
+#Date Created: 11/12/2022
+#Date Modified: 11/12/2022
+#############################################################################
+
 import math
 
 paintBuckets = lambda num: True if (num >= 1.50) else False

@@ -1,3 +1,10 @@
+#############################################################################
+#Author: Mohammad El-Hassan
+#Description: Assignemnt #3a
+#Date Created: 11/12/2022
+#Date Modified: 11/12/2022
+#############################################################################
+
 import math
 
 # define lambda functions to calculate the area

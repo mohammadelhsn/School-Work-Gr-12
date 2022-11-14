@@ -1,3 +1,10 @@
+#############################################################################
+#Author: Mohammad El-Hassan
+#Description: Mini Assingment #6c
+#Date Created: 11/12/2022
+#Date Modified: 11/12/2022
+#############################################################################
+
 while True:
     try:
         phrase = input("What phrase would you like to center?")

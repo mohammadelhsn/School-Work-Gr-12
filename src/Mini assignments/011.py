@@ -1,3 +1,10 @@
+#############################################################################
+#Author: Mohammad El-Hassan
+#Description: Mini Assingment #11
+#Date Created: 11/12/2022
+#Date Modified: 11/12/2022
+#############################################################################
+
 def appendCourses(arr: list):
     arr.append("advanced functions")
     arr.append("computer science")

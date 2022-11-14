@@ -1,3 +1,10 @@
+#############################################################################
+#Author: Mohammad El-Hassan
+#Description: Mini Assingment #60
+#Date Created: 11/12/2022
+#Date Modified: 11/12/2022
+#############################################################################
+
 word = "weareallsickandbarbariccoders"
 we = word[0:2]
 are = word[2:5]

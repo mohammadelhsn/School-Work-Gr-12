@@ -1,3 +1,10 @@
+#############################################################################
+#Author: Mohammad El-Hassan
+#Description: Mini Assingment #6a
+#Date Created: 11/12/2022
+#Date Modified: 11/12/2022
+#############################################################################
+
 usd = lambda amt: round(amt * 0.725, 3)
 euro = lambda amt: round(amt * 0.75, 3)
 peso = lambda amt: round(amt * 14.54, 3)

@@ -1,3 +1,10 @@
+#############################################################################
+#Author: Mohammad El-Hassan
+#Description: Mini Assingment #13b
+#Date Created: 11/12/2022
+#Date Modified: 11/12/2022
+#############################################################################
+
 def printTriangle(rows: int):
     if rows == 0:
         return
