@@ -1,9 +1,7 @@
-def factorial(num: int):
-    print(num)
-    if num <= 1:
-        return num
-    else:
-        return num * factorial(num - 1)
+class Marks:
+    def __init__(self, grade):
+        self.grade = grade
 
 
-print(factorial(5))
+student1 = Marks(98)
+print(student1)
