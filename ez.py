@@ -8,7 +8,5 @@ class Person:
         obj.hi = cls.hi
         return obj
     def hi(): return "hi"
-
-
 student1 = Person("John", "Doe")
 print(student1.__dict__)
