@@ -1,17 +1,17 @@
-class Person {
-	constructor(first_name, last_name) {
-		this.first_name = first_name;
-		this.last_name = last_name;
-		this.getFirstName = this.getFirstName;
-		this.getLastName = this.getLastName;
-	}
-	getFirstName() {
-		return this.first_name;
-	}
-	getLastName() {
-		return this.last_name;
+const hours = document.getElementsByClassName('ellipsis hours_played');
+
+let total = 0;
+
+function getHours() {
+	total = 0;
+
+	for (game of hours) {
+		const hour = parseFloat(game.innerHTML.split(' ')[0].replace(',', ''));
+
+		if (isNaN(hour)) {
+			return console.log(`Total hours: ${Math.round(total)} hour(s)`);
+		}
+
+		total += hour;
 	}
 }
-
-const a = new Person();
-console.log(a);
