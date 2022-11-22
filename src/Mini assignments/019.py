@@ -1,13 +1,9 @@
-""""
-1) Create a bank account that let's the user have both withdrawals and deposits.  
-Each person should be their own object so that each deposit and withdrawal should only affect the individual 
-bank accounts, not each other.  Make a attribute inside of the __init__ to set the balance to zero (default). 
-If during withdrawal, they reach "0", use a conditional to let them know they have no money in the account.
-
-2) Create another bank account where it is a joint account and anyone can withdraw or deposit to the amount. 
-If they reach "0", use a conditional to let them know they have no money in the account.
-"""
-
+#############################################################################
+#Author: Mohammad El-Hassan
+#Description: Mini-assignment #19
+#Date Created: 11/19/2022
+#Date Modified: 11/19/2022
+#############################################################################
 
 class Standard:
     def __init__(self, name, balance=0.0):

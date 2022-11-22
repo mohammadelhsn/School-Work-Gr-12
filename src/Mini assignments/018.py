@@ -1,12 +1,10 @@
-""""
-call on a random number generator method that will determine a random number between 1-10 (do this once for each enemy).  If the random number is greater than 7,  - output the random number and the enemy it is associated with - then you must set the enemies "life" to a ZERO and print ("critical"). 
+#############################################################################
+#Author: Mohammad El-Hassan
+#Description: Mini-assignment #18
+#Date Created: 11/22/2022
+#Date Modified: 11/22/2022
+#############################################################################
 
-If the random number is between 1-6 - output the random number and the enemy it is associated with - and then run the attack method only.
-
-each enemy will get one attack
-
-each enemy will check to see if they are still alive 
-"""
 import random
 
 
