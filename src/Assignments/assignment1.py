@@ -1,14 +1,14 @@
 #############################################################################
-#Author: Mohammad El-Hassan
-#Description: Assignemnt #1
-#Date Created: 11/12/2022
-#Date Modified: 11/12/2022
+# Author: Mohammad El-Hassan
+# Description: Assignemnt #1
+# Date Created: 11/12/2022
+# Date Modified: 11/23/2022
 #############################################################################
 
 while True:
     try:
         # get the input from the user (first number, second number and operation)
-        
+
         num1 = int(input("What is your first number? "))
         num2 = int(input("What is your second number? "))
         operation = input("What is operation would you like to try? ")
