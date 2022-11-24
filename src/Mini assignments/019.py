@@ -1,11 +1,20 @@
 #############################################################################
-#Author: Mohammad El-Hassan
-#Description: Mini-assignment #19
-#Date Created: 11/19/2022
-#Date Modified: 11/19/2022
+# Author: Mohammad El-Hassan
+# Description: Mini-assignment #19
+# Date Created: 11/19/2022
+# Date Modified: 11/19/2022
 #############################################################################
 
+
+class Bank:
+    def __init__(self, name, bal=0.0):
+        self.standard = Standard(name, bal)
+        self.joint = Joint(name)
+
+
 class Standard:
+    joint = 0
+
     def __init__(self, name, balance=0.0):
         self.bal = balance
         self.name = name
@@ -100,13 +109,10 @@ class Joint:
             return self.viewbal()
 
 
-user1 = Standard("User 1")
-user2 = Standard("User 2")
+user1 = Bank("User 1")
+user2 = Bank("User 2")
 
-user1_joint = Joint("User 1")
-user2_joint = Joint("User 2")
-
-users = [user1, user2, user1_joint, user2_joint]
+users = [user1, user2, user1.joint, user2.joint]
 
 while True:
     try:
