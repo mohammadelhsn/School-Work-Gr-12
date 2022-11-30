@@ -1,1 +1,3 @@
-from turtle import *
+import graphics
+
+print(graphics.GraphWin())
