@@ -348,7 +348,7 @@ while True:
         )
 
         restart = int(input("Are you happy with this character? (0 for no, 1 for yes)")) 
- 
+
         if restart == 0: 
             pass 
         else: 
