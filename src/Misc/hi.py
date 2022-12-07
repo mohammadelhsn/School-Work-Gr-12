@@ -1,5 +1,4 @@
-def sum(a, b: int):
-    print(a.append())
+from graphics import *
 
 
-sum(1, 2)
+test()

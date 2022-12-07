@@ -17,14 +17,8 @@ def main():
             "What would you like to draw?\n1) A triangle\n2) Rectangle\n3) 5-sided shape "
         )
     )
-    pt_count = 0
-
-    if shape == 1:
-        pt_count = 3
-    if shape == 2:
-        pt_count = 4
-    if shape == 3:
-        pt_count = 5
+    
+    pt_count = shape + 2
 
     verticies = []
     for i in range(pt_count):
