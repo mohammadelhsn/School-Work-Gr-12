@@ -20,6 +20,8 @@ def main():
     P1: Point = rect.getP1()
     P2: Point = rect.getP2()
 
+    
+
     P1.setFill("orange")
     P1.draw(win)
     P2.setFill("green")
