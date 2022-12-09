@@ -34,14 +34,5 @@ def main():
     #     point1.undraw()
     #     point2.undraw()
 
-    ln1 = Line(Point(-100, -100), Point(-100, 100))
-    ln2 = Line(Point(-100, 100), Point(100, 100))
-
-    ln1.draw(win)
-    ln2.draw(win)
-
-    win.getMouse()
-    win.close()
-
 
 main()
