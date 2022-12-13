@@ -47,6 +47,7 @@ for i in range(5):
     deck = Deck()
     deck.shuffle()
     card1 = deck.cards.pop()
+    cards.append(card1)
 
 for card in cards:
     print(card)
