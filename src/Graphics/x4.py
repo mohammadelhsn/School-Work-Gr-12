@@ -34,5 +34,42 @@ def main():
     #     point1.undraw()
     #     point2.undraw()
 
+    line1 = Line(Point(100, 90), Point(-100, 90))
+    line2 = Line(Point(-100, 90), Point(-100, -100))
+    line3 = Line(Point(-100, -100), Point(100, -100))
+    line4 = Line(Point(100, -100), Point(100, 100))
+
+    change = 10
+
+    def draw_spiral(l1, l2, l3, l4):
+        if l1.p1.x == 0:
+            return
+        else:
+            l1.draw(win)
+            l2.draw(win)
+            l3.draw(win)
+            l4.draw(win)
+            li1 = Line(
+                Point(l1.getP1().x - change, l1.getP1().y - change),
+                Point(l1.getP2().x + change, l1.getP2().y - change),
+            )
+            li2 = Line(
+                Point(l2.p1.x + change, l2.p1.y - change),
+                Point(l2.p2.x + change, l2.p2.y + change),
+            )
+            li3 = Line(
+                Point(l3.p1.x + change, l3.p1.y + change),
+                Point(l3.p2.x - change, l3.p2.y + change),
+            )
+            li4 = Line(
+                Point(l4.p1.x - change, l4.p1.y + change),
+                Point(l4.p2.x - change, l4.p2.y - change),
+            )
+        return draw_spiral(li1, li2, li3, li4)
+
+    draw_spiral(line1, line2, line3, line4)
+    win.getMouse()
+    win.close()
+
 
 main()
