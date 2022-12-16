@@ -402,6 +402,9 @@ class GraphWin(tk.Canvas):
             item.undraw()
             item.draw(self)
         self.update()
+    def clear(self): 
+        for item in self.items: 
+            item.undraw()
 
 
 class Transform:

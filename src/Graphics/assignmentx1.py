@@ -1,4 +1,12 @@
+#############################################################################
+# Author: Mohammad El-Hassan
+# Description: Graphics-Assignment #1
+# Date Created: 12/16/2022
+# Date Modified: 12/16/2022
+#############################################################################
+
 from graphics import *
+
 
 def main():
     win = GraphWin("Assignment xx1", 500, 500)
@@ -29,4 +37,6 @@ def main():
 
     win.getMouse()
     win.close()
+
+
 main()
