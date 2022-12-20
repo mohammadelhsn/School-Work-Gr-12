@@ -51,7 +51,7 @@ def main():
         rect = Rectangle(Point(-dimensions, -dimensions), Point(dimensions, dimensions))
 
         if outline != "no":
-            rect.setOUtline(outline)
+            rect.setOutline(outline)
 
         rect.draw(win)
 
