@@ -1,14 +1,3 @@
-"""
-MINI-ASSIGNMENT x3:
-
-Use the input to display choices of the following menu in a while loop : A ) circle (use the input for dimensions, outline and colour) B) a rectangle (use the input for dimensions, outline and colour) 
-
-C) text (print out on the screen what the person inputs including font/bold/italic etc)
-
-D) to exit
-
-"""
-
 from graphics import *
 
 
