@@ -1,14 +1,9 @@
-print(f"😎 " * 6)
-l = "  " * 5
-print(f"😎 " + l + "  😎")
-print(f"😎 " + l + "  😎")
-print(f"😎 " + l + "  😎")
-print(f"😎 " + l + "  😎")
-print(f"😎 " + l + "  😎")
-print(f"😎 " + l + "  😎")
-print(f"😎 " + l + "  😎")
-print(f"😎 " + l + "  😎")
-print(f"😎 " + l + "  😎")
-print(f"😎 " + l + "  😎")
-print(f"😎 " + l + "  😎")
-print(f"😎 " * 6)
+from graphics import * 
+
+settings = GraphWin("Settings Screen")
+instructions = GraphWin("Instructions Screen")
+main = GraphWin("Main Screen")
+home = GraphWin("Home")
+
+home.isOpen()
+home.close()
