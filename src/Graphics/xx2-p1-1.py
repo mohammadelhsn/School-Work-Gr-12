@@ -28,6 +28,7 @@ class Board:
 b = Board()
 moves = 9
 playing = True
+
 while playing == True: 
     for i in range(moves):
         p = win.getMouse()

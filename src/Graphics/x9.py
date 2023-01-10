@@ -1,0 +1,3 @@
+from graphics import *
+def main():win=GraphWin("Graphics Assignment 9",500,500);win.setCoords(-(win.getWidth()/2),-(win.getHeight()/2),(win.getWidth()/2),(win.getHeight()/2),);input1=Entry(Point(-100,0),5).draw(win);Text(Point(-50,0),"+").draw(win);Rectangle(Point(-65,11.5),Point(-35,-8.5)).draw(win);input2=Entry(Point(0,0),5).draw(win);Text(Point(70,0),"Get sum!").draw(win);Rectangle(Point(36,11.5),Point(102,-8.5)).draw(win);win.getMouse();n1=int(input1.getText());n2=int(input2.getText());Text(Point(150,0),str(n1+n2)).draw(win);win.getMouse();win.close()
+main()
