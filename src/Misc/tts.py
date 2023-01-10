@@ -24,7 +24,7 @@ def main():
     save = input("Would you like an MP3 version of the song? (yes, no)")
     if save == "yes":
         file_name = input("What would you like to name the file? ")
-        engine.save_to_file(lyrics, f"{file_name}.mp3")
+        engine.save_to_file(lyrics, f"{file_name}.wav")
         engine.runAndWait()
     if save == "no":
         return
